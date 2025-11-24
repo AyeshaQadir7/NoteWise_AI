@@ -1,17 +1,6 @@
-Always use this
+# Complete Setup & Strict Instructions for Study Notes AI Agent
 
-● UV add
-● OpenAgents SDK
-● Streamlit (recommended for UI, but HTML/CSS is allowed your choice)
-● PyPDF (for PDF text extraction)
-● Gemini CLI
-● Context7 MCP (tool provider)
-
-# 🚀 Complete Setup & Strict Instructions for Study Notes AI Agent
-
----
-
-## **1️⃣ Prerequisites**
+## **Prerequisites**
 
 - Python **3.10+**
 - Installed **UV** for dependency management
@@ -20,7 +9,7 @@ Always use this
 
 ---
 
-## **2️⃣ Create Project Directory**
+## **Create Project Directory**
 
 ```bash
 mkdir study_notes_ai
@@ -29,7 +18,7 @@ cd study_notes_ai
 
 ---
 
-## **3️⃣ Initialize UV Environment & Add Packages**
+## **Initialize UV Environment & Add Packages**
 
 ```bash
 uv init  # initialize UV project
@@ -59,7 +48,7 @@ uv add gemini-cli           # Gemini CLI for model interaction
 
 ---
 
-## **5️⃣ Configure `.env` File**
+## **Configure `.env` File**
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
@@ -69,7 +58,7 @@ GEMINI_API_KEY=your_gemini_api_key_here
 
 ---
 
-## **6️⃣ Setup Gemini Client & OpenAgents SDK**
+## **Setup Gemini Client & OpenAgents SDK**
 
 **agent.py**
 
@@ -122,7 +111,7 @@ if __name__ == "__main__":
 
 ---
 
-## **7️⃣ Implement PDF Processing Tools**
+## **Implement PDF Processing Tools**
 
 **tools.py**
 
@@ -161,7 +150,7 @@ def extract_text_from_pdf(file_path: str):
 
 ---
 
-## **8️⃣ Setup Streamlit UI**
+## **Setup Streamlit UI**
 
 **app.py**
 
@@ -184,7 +173,7 @@ if uploaded_file:
 
 ---
 
-## **9️⃣ Gemini CLI & Context7 MCP**
+## **Gemini CLI & Context7 MCP**
 
 1. **Install Gemini CLI** (already in UV):
 
@@ -202,7 +191,7 @@ gemini mcp connect https://context7.com
 
 ---
 
-## **10️⃣ Execution**
+## **Execution**
 
 ```bash
 uv run python app.py
@@ -213,7 +202,7 @@ uv run python app.py
 
 ---
 
-## **11️⃣ Strict Rules Recap**
+## **Strict Rules Recap**
 
 - Always use **UV** for package management.
 - Always use **OpenAgents SDK** (`agents` module).
@@ -242,7 +231,7 @@ I’ll give it in **parts**, just like your previous “Senior Python AI Enginee
 
 ---
 
-# 🚀 **Full-Stack Study Notes AI Application – Instructions**
+# **Full-Stack Study Notes AI Application – Instructions**
 
 ---
 
@@ -250,7 +239,7 @@ I’ll give it in **parts**, just like your previous “Senior Python AI Enginee
 
 **Objective:** Setup environment, dependencies, file structure, and basic skeleton.
 
-### 1️⃣ Create Project Directory
+### Create Project Directory
 
 ```bash
 mkdir study_notes_ai
@@ -259,7 +248,7 @@ cd study_notes_ai
 
 ---
 
-### 2️⃣ Initialize UV & Add Dependencies
+### Initialize UV & Add Dependencies
 
 ```bash
 uv init
@@ -275,7 +264,7 @@ uv add context7-mcp          # MCP server
 
 ---
 
-### 3️⃣ File Structure
+### File Structure
 
 ```text
 .
@@ -299,7 +288,7 @@ GEMINI_API_KEY=your_gemini_api_key_here
 
 ---
 
-### 5️⃣ Minimal Agent Setup
+### Minimal Agent Setup
 
 **agent.py skeleton**
 
@@ -444,3 +433,4 @@ uv run python app.py
 - MCP tools **must** be connected before running agents.
 - Streamlit recommended; HTML/CSS optional.
 - Minimal code only; no unnecessary bells, whistles, or streaming.
+
