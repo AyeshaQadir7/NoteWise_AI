@@ -3,7 +3,7 @@ name = "study-notes-ai"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13,<4.0"
+requires-python = ">=3.13"
 dependencies = [
     "gemini-cli>=0.2.5",
     "openai-agents>=0.6.1",
@@ -11,6 +11,3 @@ dependencies = [
     "python-dotenv>=1.2.1",
     "streamlit>=1.51.0",
 ]
-
-[tool.setuptools]
-py-modules = ["agent", "app", "main", "tools"]
