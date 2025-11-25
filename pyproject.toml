@@ -1,9 +1,9 @@
 [project]
-name = "study-notes-ai"
+name = "study-agent-proj"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.13,<4.0"
 dependencies = [
     "gemini-cli>=0.2.5",
     "openai-agents>=0.6.1",
