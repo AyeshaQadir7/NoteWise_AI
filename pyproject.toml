@@ -8,7 +8,6 @@ dependencies = [
     "gemini-cli>=0.2.5",
     "openai-agents>=0.6.1",
     "pypdf>=6.3.0",
-    "pypdf2>=3.0.1",
     "python-dotenv>=1.2.1",
     "streamlit>=1.51.0",
 ]

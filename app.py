@@ -3,7 +3,7 @@ from agent import main as run_agent
 import asyncio
 import os
 
-st.set_page_config(page_title="NoteWise - Study Notes AI", layout="wide")
+st.set_page_config(page_title="NoteWise - Study Notes AI", layout="centered")
 st.title("NoteWise - AI Study Notes Summarizer & Quiz Generator")
 
 uploaded_file = st.file_uploader("Upload PDF", type=["pdf"])

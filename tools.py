@@ -1,9 +1,8 @@
-from PyPDF2 import PdfReader
+from pypdf import PdfReader
 from agents import function_tool
 import json
 
 USER_DATA_FILE = "user_data.json"
-
 
 @function_tool
 def read_user_profile():
