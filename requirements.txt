@@ -1,6 +1,7 @@
 gemini-cli>=0.2.5
 openai-agents>=0.6.1
-pypdf>=6.3.0
+# PyPDF2>=3.0.1
+pypdf>=6.4.0
 python-dotenv>=1.2.1
 streamlit>=1.51.0
 context7-mcp

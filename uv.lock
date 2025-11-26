@@ -9,7 +9,6 @@ resolution-markers = [
 [manifest]
 members = [
     "study-agent-proj",
-    "study-notes-ai",
 ]
 
 [[package]]
